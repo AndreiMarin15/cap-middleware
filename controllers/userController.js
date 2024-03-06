@@ -1,12 +1,12 @@
-const userServices = require("../services/userServices.js");
+import { viewAccount } from "../services/userServices.js";
 
-exports.viewAccount = async (req, res) => {
+export async function viewAccount(req, res) {
   try {
-    const response = await userServices.viewAccount();
+    const response = await viewAccount();
     res.json({
       HI: null,
     });
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
-};
+}
