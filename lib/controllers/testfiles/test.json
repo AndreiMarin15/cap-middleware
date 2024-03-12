@@ -1,0 +1,142 @@
+{
+  "resourceType": "Encounter",
+  "id": "example",
+  "period": {
+    "start": "2024-03-12T09:01:30Z"
+  },
+  "subject": {
+    "reference": "Patient/example"
+  },
+  "contained": [
+    {
+      "resourceType": "Observation",
+      "subject": "sample_id",
+      "id": "systolic",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "8480-6"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 120,
+        "unit": "mmHg"
+      }
+    },
+    {
+      "resourceType": "Observation",
+      "subject": "sample_id",
+      "id": "diastolic",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "8462-4"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 80,
+        "unit": "mmHg"
+      }
+    },
+    {
+      "resourceType": "Observation",
+      "subject": "sample_id",
+      "id": "heartRate",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "8867-4"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 72,
+        "unit": "beats/minute"
+      }
+    },
+    {
+      "resourceType": "Observation",
+      "subject": "sample_id",
+      "id": "height",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "8302-2"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 170,
+        "unit": "cm"
+      }
+    },
+    {
+      "resourceType": "Observation",
+      "subject": "sample_id",
+      "id": "weight",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "29463-7"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 70,
+        "unit": "kg"
+      }
+    },
+    {
+      "resourceType": "Observation",
+      "subject": "sample_id",
+      "id": "bmi",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "39156-5"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 24.2,
+        "unit": "kg/m2"
+      }
+    },
+    {
+      "resourceType": "Observation",
+      "subject": "sample_id",
+      "id": "signsAndSymptoms",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "33483-9"
+          }
+        ]
+      },
+      "valueString": "YOUR_SIGNS_AND_SYMPTOMS_HERE"
+    },
+    {
+      "resourceType": "Observation",
+      "subject": "sample_id",
+      "id": "reviewOfSystems",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "8687-6"
+          }
+        ]
+      },
+      "valueString": "YOUR_REVIEW_OF_SYSTEMS_HERE"
+    }
+  ]
+}
