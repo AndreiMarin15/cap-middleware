@@ -6,7 +6,7 @@ const userRoutes = require("./lib/routes/userRoutes");
 
 const port = 3006;
 
-app.use(cors({ origin: "http://localhost:4200" }));
+app.use(cors());
 app.use(bodyParser.json());
 
 app.use("/user", userRoutes);
