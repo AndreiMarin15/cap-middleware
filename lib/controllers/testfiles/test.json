@@ -1,15 +1,15 @@
 {
-  "resourceType": "Encounter",
-  "id": "example",
+  "resource_type": "Encounter",
+  "id": "new_example",
   "period": {
     "start": "2024-03-12T09:01:30Z"
   },
   "subject": {
-    "reference": "Patient/example"
+    "reference": "f57361cf-df10-47b7-b91f-30e19185d4a4"
   },
   "contained": [
     {
-      "resourceType": "Observation",
+      "resource_type": "Observation",
       "subject": "sample_id",
       "id": "systolic",
       "code": {
@@ -26,7 +26,7 @@
       }
     },
     {
-      "resourceType": "Observation",
+      "resource_type": "Observation",
       "subject": "sample_id",
       "id": "diastolic",
       "code": {
@@ -43,7 +43,7 @@
       }
     },
     {
-      "resourceType": "Observation",
+      "resource_type": "Observation",
       "subject": "sample_id",
       "id": "heartRate",
       "code": {
@@ -60,7 +60,7 @@
       }
     },
     {
-      "resourceType": "Observation",
+      "resource_type": "Observation",
       "subject": "sample_id",
       "id": "height",
       "code": {
@@ -77,7 +77,7 @@
       }
     },
     {
-      "resourceType": "Observation",
+      "resource_type": "Observation",
       "subject": "sample_id",
       "id": "weight",
       "code": {
@@ -94,7 +94,7 @@
       }
     },
     {
-      "resourceType": "Observation",
+      "resource_type": "Observation",
       "subject": "sample_id",
       "id": "bmi",
       "code": {
@@ -111,7 +111,7 @@
       }
     },
     {
-      "resourceType": "Observation",
+      "resource_type": "Observation",
       "subject": "sample_id",
       "id": "signsAndSymptoms",
       "code": {
@@ -125,7 +125,7 @@
       "valueString": "YOUR_SIGNS_AND_SYMPTOMS_HERE"
     },
     {
-      "resourceType": "Observation",
+      "resource_type": "Observation",
       "subject": "sample_id",
       "id": "reviewOfSystems",
       "code": {
