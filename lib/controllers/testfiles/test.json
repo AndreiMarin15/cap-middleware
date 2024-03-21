@@ -10,7 +10,7 @@
   "contained": [
     {
       "resource_type": "Observation",
-      "subject": "sample_id",
+      "subject": "f57361cf-df10-47b7-b91f-30e19185d4a4",
       "id": "systolic",
       "code": {
         "coding": [
@@ -27,7 +27,7 @@
     },
     {
       "resource_type": "Observation",
-      "subject": "sample_id",
+      "subject": "f57361cf-df10-47b7-b91f-30e19185d4a4",
       "id": "diastolic",
       "code": {
         "coding": [
@@ -44,7 +44,7 @@
     },
     {
       "resource_type": "Observation",
-      "subject": "sample_id",
+      "subject": "f57361cf-df10-47b7-b91f-30e19185d4a4",
       "id": "heartRate",
       "code": {
         "coding": [
@@ -61,7 +61,7 @@
     },
     {
       "resource_type": "Observation",
-      "subject": "sample_id",
+      "subject": "f57361cf-df10-47b7-b91f-30e19185d4a4",
       "id": "height",
       "code": {
         "coding": [
@@ -78,7 +78,7 @@
     },
     {
       "resource_type": "Observation",
-      "subject": "sample_id",
+      "subject": "f57361cf-df10-47b7-b91f-30e19185d4a4",
       "id": "weight",
       "code": {
         "coding": [
@@ -95,7 +95,7 @@
     },
     {
       "resource_type": "Observation",
-      "subject": "sample_id",
+      "subject": "f57361cf-df10-47b7-b91f-30e19185d4a4",
       "id": "bmi",
       "code": {
         "coding": [
@@ -112,7 +112,7 @@
     },
     {
       "resource_type": "Observation",
-      "subject": "sample_id",
+      "subject": "f57361cf-df10-47b7-b91f-30e19185d4a4",
       "id": "signsAndSymptoms",
       "code": {
         "coding": [
@@ -126,7 +126,7 @@
     },
     {
       "resource_type": "Observation",
-      "subject": "sample_id",
+      "subject": "f57361cf-df10-47b7-b91f-30e19185d4a4",
       "id": "reviewOfSystems",
       "code": {
         "coding": [
