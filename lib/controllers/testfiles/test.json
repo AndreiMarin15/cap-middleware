@@ -1,142 +1,115 @@
 {
-  "resource_type": "Encounter",
-  "id": "new_example",
+  "id": "example",
   "period": {
-    "start": "2024-03-12T09:01:30Z"
+    "start": "2024-04-01"
   },
   "subject": {
+    "type": "Patient",
     "reference": "a1e1a24a-631e-456c-b77e-cdc4be694d85"
   },
   "contained": [
     {
-      "resource_type": "Observation",
-      "subject": "a1e1a24a-631e-456c-b77e-cdc4be694d85",
       "id": "systolic",
       "code": {
         "coding": [
           {
-            "system": "http://loinc.org",
-            "code": "8480-6"
+            "code": "8480-6",
+            "system": "http://loinc.org"
           }
         ]
       },
+      "subject": {
+        "type": "Patient",
+        "reference": "a1e1a24a-631e-456c-b77e-cdc4be694d85"
+      },
+      "participant": {
+        "type": "Doctor",
+        "actor": "Doctor Test"
+      },
+      "resource_type": "Observation",
       "valueQuantity": {
-        "value": 120,
-        "unit": "mmHg"
+        "unit": "mmHg",
+        "value": "120"
       }
     },
     {
-      "resource_type": "Observation",
-      "subject": "a1e1a24a-631e-456c-b77e-cdc4be694d85",
-      "id": "diastolic",
+      "id": "labtest",
       "code": {
         "coding": [
           {
-            "system": "http://loinc.org",
-            "code": "8462-4"
+            "code": "YOUR_LOINC_CODE",
+            "system": "http://loinc.org"
           }
         ]
       },
+      "status": "requested",
+      "subject": {
+        "type": "Patient",
+        "reference": "a1e1a24a-631e-456c-b77e-cdc4be694d85"
+      },
+      "codeText": "Requested Test",
+      "imageSrc": null,
+      "participant": {
+        "type": "Doctor",
+        "actor": "Doctor Test"
+      },
+      "resource_type": "Observation",
       "valueQuantity": {
-        "value": 80,
-        "unit": "mmHg"
-      }
+        "valueQuantities": []
+      },
+      "effectiveDateTime": null,
+      "requestedDateTime": "2024-04-01"
     },
     {
-      "resource_type": "Observation",
-      "subject": "a1e1a24a-631e-456c-b77e-cdc4be694d85",
-      "id": "heartRate",
+      "id": "labtest",
       "code": {
         "coding": [
           {
-            "system": "http://loinc.org",
-            "code": "8867-4"
+            "code": "YOUR_LOINC_CODE",
+            "system": "http://loinc.org"
           }
         ]
       },
+      "status": "final",
+      "subject": {
+        "type": "Patient",
+        "reference": "a1e1a24a-631e-456c-b77e-cdc4be694d85"
+      },
+      "codeText": "Recorded Test",
+      "imageSrc": "iVBORw0KGgoAAAANSUhEUgAAAdwAAAJWCAYAAADyYDbWAAABQ2lDQ1BJQ0MgUHJvZmlsZQ...",
+      "participant": {
+        "type": "Doctor",
+        "actor": "Doctor Test"
+      },
+      "resource_type": "Observation",
       "valueQuantity": {
-        "value": 72,
-        "unit": "beats/minute"
-      }
-    },
-    {
-      "resource_type": "Observation",
-      "subject": "a1e1a24a-631e-456c-b77e-cdc4be694d85",
-      "id": "height",
-      "code": {
-        "coding": [
+        "valueQuantities": [
           {
-            "system": "http://loinc.org",
-            "code": "8302-2"
+            "unit": "mg/dl",
+            "value": "87",
+            "display": "Glucose"
           }
         ]
       },
-      "valueQuantity": {
-        "value": 170,
-        "unit": "cm"
-      }
+      "effectiveDateTime": "2024-04-01",
+      "requestedDateTime": "2024-04-01"
     },
-    {
-      "resource_type": "Observation",
-      "subject": "a1e1a24a-631e-456c-b77e-cdc4be694d85",
-      "id": "weight",
-      "code": {
-        "coding": [
-          {
-            "system": "http://loinc.org",
-            "code": "29463-7"
-          }
-        ]
-      },
-      "valueQuantity": {
-        "value": 70,
-        "unit": "kg"
-      }
-    },
-    {
-      "resource_type": "Observation",
-      "subject": "a1e1a24a-631e-456c-b77e-cdc4be694d85",
-      "id": "bmi",
-      "code": {
-        "coding": [
-          {
-            "system": "http://loinc.org",
-            "code": "39156-5"
-          }
-        ]
-      },
-      "valueQuantity": {
-        "value": 24.2,
-        "unit": "kg/m2"
-      }
-    },
-    {
-      "resource_type": "Observation",
-      "subject": "a1e1a24a-631e-456c-b77e-cdc4be694d85",
-      "id": "signsAndSymptoms",
-      "code": {
-        "coding": [
-          {
-            "system": "http://loinc.org",
-            "code": "33483-9"
-          }
-        ]
-      },
-      "valueString": "YOUR_SIGNS_AND_SYMPTOMS_HERE"
-    },
-    {
-      "resource_type": "Observation",
-      "subject": "a1e1a24a-631e-456c-b77e-cdc4be694d85",
-      "id": "reviewOfSystems",
-      "code": {
-        "coding": [
-          {
-            "system": "http://loinc.org",
-            "code": "8687-6"
-          }
-        ]
-      },
-      "valueString": "YOUR_REVIEW_OF_SYSTEMS_HERE"
-    }
-  ]
+    "129975ef-9769-4b68-a803-79398790cf7f",
+    "e5ffb649-a3e0-4432-92a0-f691ea3e3df6",
+    "cc4692ef-a35e-41b4-a0f3-2ed77b1942a8",
+    "e47d1aeb-b5dd-4726-b30b-097532f1ea3a",
+    "abcecd17-d0f0-46e0-888f-91e9e336031a",
+    "d9c0e44c-ba83-4d2d-9743-19153e2aadcd",
+    "65bde76b-b361-4c7a-ac7e-b1722fecd9ae",
+    "976cba80-e791-4a05-8130-a72a8b1e3bd5",
+    "b4260d07-1c0f-41e9-9e29-ddd043222a4d",
+    "b6d63f05-1a82-4d85-b5f6-c9fb50f4d89a",
+    "58cfc6cc-7271-4efc-94c6-187bdfb77c4d",
+    "5297b13e-ece4-4f53-b084-caad15c8df6d"
+  ],
+  "participant": {
+    "type": "doctor",
+    "actor": "Doctor Test"
+  },
+  "resource_type": "Encounter"
 }
